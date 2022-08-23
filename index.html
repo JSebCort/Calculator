@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="display">
+            <input type="test" id="function" value="" readonly>
+            <input type="text" id="displayVal" value="0" readonly>
+        </div>
+        <div id="buttons">
+            <div id="digits">
+                <div id="top-row">
+                    <input type="button" class="numButtons" id="7" value="7" onClick="onRun(7)">
+                    <input type="button" class="numButtons" id="8" value="8" onClick="onRun(8)">
+                    <input type="button" class="numButtons" id="9" value="9" onClick="onRun(9)">
+                </div>
+                <div id="top-middle-row">
+                    <input type="button" class="numButtons" id="4" value="4" onClick="onRun(4)">
+                    <input type="button" class="numButtons" id="5" value="5" onClick="onRun(5)">
+                    <input type="button" class="numButtons" id="6" value="6" onClick="onRun(6)">
+                </div>
+                <div id="bottom-middle-row">
+                    <input type="button" class="numButtons" id="1" value="1" onClick="onRun(1)">
+                    <input type="button" class="numButtons" id="2" value="2" onClick="onRun(2)">
+                    <input type="button" class="numButtons" id="3" value="3" onClick="onRun(3)">
+                </div>
+                <div id="bottom-row">
+                    <input type="button" class="numButtons" id="0" value="0" onClick="onRun(0)">
+                    <input type="button" class="numButtons" id="clear" value="C" onClick="clear()">
+                    <input type="button" class="numButtons" id="equals" value="=" oClick="equals()">
+                </div>
+            </div>
+            <div id="operations">
+                <input type="button" class="operatorButtons" id="addition" value="+" onClick="operator('+')">
+                <input type="button" class="operatorButtons" id="subtraction" value="-" onClick="operator('-')">
+                <input type="button" class="operatorButtons" id="multiplication" value="*" onClick="operator('*')">
+                <input type="button" class="operatorButtons" id="division" value="/" onClick="operator('/')">
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
