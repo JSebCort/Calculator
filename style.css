@@ -42,23 +42,15 @@ input[type="button"]{
     padding:10px;
 }
 
-#top-row,#top-middle-row,#bottom-middle-row,#bottom-row{
-    display: flex;
-    justify-content: space-around;
-    width: 375px;
-    height: 100px;
-}
-
 #digits{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     width: 375px;
     background: rosybrown;
 }
 
 #operations{
     display:flex;
-    flex-direction: column;
     justify-content: space-around;
     width:125px;
     align-items: center;

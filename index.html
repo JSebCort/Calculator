@@ -15,32 +15,25 @@
         </div>
         <div id="buttons">
             <div id="digits">
-                <div id="top-row">
-                    <input type="button" class="numButtons" id="7" value="7" onClick="onRun(7)">
-                    <input type="button" class="numButtons" id="8" value="8" onClick="onRun(8)">
-                    <input type="button" class="numButtons" id="9" value="9" onClick="onRun(9)">
-                </div>
-                <div id="top-middle-row">
-                    <input type="button" class="numButtons" id="4" value="4" onClick="onRun(4)">
-                    <input type="button" class="numButtons" id="5" value="5" onClick="onRun(5)">
-                    <input type="button" class="numButtons" id="6" value="6" onClick="onRun(6)">
-                </div>
-                <div id="bottom-middle-row">
-                    <input type="button" class="numButtons" id="1" value="1" onClick="onRun(1)">
-                    <input type="button" class="numButtons" id="2" value="2" onClick="onRun(2)">
-                    <input type="button" class="numButtons" id="3" value="3" onClick="onRun(3)">
-                </div>
-                <div id="bottom-row">
-                    <input type="button" class="numButtons" id="0" value="0" onClick="onRun(0)">
-                    <input type="button" class="numButtons" id="clear" value="C" onClick="clear()">
-                    <input type="button" class="numButtons" id="equals" value="=" oClick="equals()">
-                </div>
+                    <button class = "numButtons" onclick="onRun(7)">7</button>
+                    <button class = "numButtons" onclick="onRun(8)">8</button>
+                    <button class = "numButtons" onclick="onRun(9)">9</button>
+                    <button class = "numButtons" onclick="onRun(4)">4</button>
+                    <button class = "numButtons" onclick="onRun(5)">5</button>
+                    <button class = "numButtons" onclick="onRun(6)">6</button>
+                    <button class = "numButtons" onclick="onRun(1)">1</button>
+                    <button class = "numButtons" onclick="onRun(2)">2</button>
+                    <button class = "numButtons" onclick="onRun(3)">3</button>
+
+                    <button id = "clear" class = "numButtons" onclick="clear()">C</button>
+                    <button class = "numButtons" onclick="onRun(0)">0</button>
+                    <button id = "equals" class = "numButtons" onclick="equals">=</button>
             </div>
             <div id="operations">
-                <input type="button" class="operatorButtons" id="addition" value="+" onClick="operator('+')">
-                <input type="button" class="operatorButtons" id="subtraction" value="-" onClick="operator('-')">
-                <input type="button" class="operatorButtons" id="multiplication" value="*" onClick="operator('*')">
-                <input type="button" class="operatorButtons" id="division" value="/" onClick="operator('/')">
+                <button id="addition" class = "operatorButtons" onclick="operator('+')">+</button>
+                <button id="subtraction" class = "operatorButtons" onclick="operator('-')">-</button>
+                <button id="multiplication" class = "operatorButtons" onclick="operator('*')">*</button>
+                <button id="division" class = "operatorButtons" onclick="operator('/')">/</button>
             </div>
         </div>
         
