@@ -1,58 +1,58 @@
 #container{
-    /* align-self: center; */
-    background-color: antiquewhite;
+    background-color: rgb(160,208,234);
     display:flexbox;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 430px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-
 }
+
+input[type="text"]{
+    background: transparent;
+    border: none;
+    text-align: end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #display{
-    width: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(241,251,235);
 }
 
 #displayVal{
-    height: 100px;
-    width:100%;
-    padding:0px;
-    margin:0 auto;
-    border:0px;
-    background-color:aqua;
-    text-align: end;
-    font-size: xx-large;
+    font-size: 40pt;
 }
 
-#buttons{
-    display: flex;
-    width: 100%;
-    height: 400px;
-    background: cadetblue;
+#function{
+    font-size:15pt;
 }
 
-input[type="button"]{
-    height:50px;
-    width:50px;
-    text-align: center;
+#clear{
+    background-color:rgb(253,159,169);
+}
+
+.operatorButtons{
+    background-color: rgb(239,255,147);
 }
 
 .numButtons{
-    margin:auto;
-    padding:10px;
+    background-color:rgb(239,239,239);
 }
 
-#digits{
-    display: flex;
-    justify-content: space-around;
-    width: 375px;
-    background: rosybrown;
+button{  
+    height: 60px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#operations{
-    display:flex;
-    justify-content: space-around;
-    width:125px;
-    align-items: center;
-    background:chartreuse;
+#buttons{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
 }
