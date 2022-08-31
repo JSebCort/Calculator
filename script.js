@@ -1,7 +1,11 @@
+/**
+ * This file is no longer used and was replaced by script2.js
+ */
+
 let calculation = {
-  numOne : 0,
+  numOne : null,
   numTwo : null,
-  operator: ""
+  operator: null
 }
 
 function add(x, y){
@@ -48,18 +52,37 @@ function onRun(x){
 
 function clear(){
   document.getElementById('displayVal').value = "";
+  document.getElementById('function').value = "";
+  calculation['numOne'] = 0;
+  calculation['numTwo'] = null;
+  calculation['operator'] = "";
+
 }
 
 function operator(x){
-  let newVal = document.getElementById("displayVal").value
-  console.log(newVal);
-  if(newVal != ""){
-    calculation['numOne'] = newVal;
+  if (calculation['numOne'] == null){
+    console.log('here');
+    
+    calculation['numOne'] = document.getElementById("displayVal").value;
     calculation['operator'] = x;
-    document.getElementById('function').value = (calculation['numOne']) + calculation['operator'];
+    document.getElementById('function').value = calculation['numOne']+""+calculation['operator'];
     document.getElementById("displayVal").value = "";
+    console.log(calculation);
   }
-  console.log(calculation);
+  else{
+    if(calculation['operator'] != null){
+      console.log('there');
+      console.log(calculation);
+      calculation['numTwo'] = document.getElementById("displayVal").value;
+      calculation['numOne'] = operate(calculation['operator'], calculation['numOne'], calculation['numTwo']);
+      document.getElementById('function').value = calculation['numOne']+""+calculation['operator'];
+      document.getElementById("displayVal").value = calculation['numOne'];
+      calculation['numTwo'] = null;
+      calculation['operator'] = null;
+      console.log(calculation);
+    }
+  }
+
 }
 
 
@@ -74,6 +97,7 @@ function equals(){
     document.getElementById("displayVal").value = result;
     calculation['numOne'] = result;
     calculation['numTwo'] = null;
+    calculation['operator'] = "";
   }
   console.log(calculation);
 }

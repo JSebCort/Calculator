@@ -10,8 +10,8 @@
 <body>
     <div id="container">
         <div id="display">
-            <input class="displays" type="text" id="function" value=" " readonly>
-            <input class="displays" type="text" id="displayVal" value="0" readonly>
+            <input class="displays" type="text" id="functionDisplay" value="" readonly>
+            <input class="displays" type="text" id="valueDisplay" value="0" readonly>
         </div>
         <div id="buttons">
             <button class="numButtons" onclick="onRun(7)">7</button>
@@ -29,7 +29,7 @@
             <button class="numButtons" onclick="onRun(3)">3</button>
             <button id="multiplication" class="operatorButtons" onclick="operator('*')">*</button>
 
-            <button id= "clear" class="numButtons" onclick="clear()">C</button>
+            <button id= "clear" class="clearButton" onclick="clear()">C</button>
             <button class="numButtons" onclick="onRun(0)">0</button>
             <button id="equals" class="numButtons" onclick="equals">=</button>
             <button id="division" class="operatorButtons" onclick="operator('/')">/</button>
@@ -37,6 +37,6 @@
         </div>
         
     </div>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>

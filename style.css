@@ -22,11 +22,12 @@ input[type="text"]{
     background-color: rgb(241,251,235);
 }
 
-#displayVal{
+#valueDisplay{
     font-size: 40pt;
+    max-width: 100%;
 }
 
-#function{
+#functionDisplay{
     font-size:15pt;
 }
 
@@ -38,7 +39,7 @@ input[type="text"]{
     background-color: rgb(239,255,147);
 }
 
-.numButtons{
+.numButtons,.clearButton{
     background-color:rgb(239,239,239);
 }
 
